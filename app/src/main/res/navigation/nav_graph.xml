@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentSetList">
+
+    <fragment
+        android:id="@+id/fragmentSetList"
+        android:name="com.baharudin.mvvmpokemon.view.FragmentSetList"
+        android:label="FragmentSetList" >
+        <action
+            android:id="@+id/action_fragmentSetList_to_fragmentPokemonList"
+            app:destination="@id/fragmentPokemonList" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPokemonList"
+        android:name="com.baharudin.mvvmpokemon.view.FragmentPokemonList"
+        android:label="FragmentPokemonList" >
+        <action
+            android:id="@+id/action_fragmentPokemonList_to_fragmentPokemonCardDetail"
+            app:destination="@id/fragmentPokemonCardDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPokemonCardDetail"
+        android:name="com.baharudin.mvvmpokemon.view.FragmentPokemonCardDetail"
+        android:label="FragmentPokemonCardDetail" />
+</navigation>
